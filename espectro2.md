@@ -5,8 +5,8 @@ A(1)=2; %Valor de a0
 A(n+1)=abs((-2./(pi*n)).*(1-cos(n*pi))); %Valor de ab; comando abs para tirar o módulo do resultado
 ni=1:2:11; %ni = número ímpar
 np=2:2:10; %np = número par
-phi(ni)=(pi/2);
-phi(np)=0;
+phi(ni)=0;
+phi(np)=(pi/2);
 w=[0,n];
 subplot(2,1,1); %Matriz aonde será plotado o gráfico. Matriz 2x1 na posição 1.
 stem(w,A);
