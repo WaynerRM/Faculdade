@@ -54,8 +54,16 @@ A3 = [cosd(teta3) -cos(alfa3)*sind(teta3) sind(alfa3)*sind(teta3) a3*cosd(teta3)
     sind(teta3) cosd(alfa3)*cosd(teta3) -sind(alfa3)*cosd(teta3) a3*sind(teta3);
     0 sind(alfa3) cosd(alfa3) d3; 0 0 0 1];
 
-T = A1*A2*A3; %matriz de transformação homogenea
+T = A1*A2*A3 %matriz de transformação homogenea
 
-X = T(1,4);
-Y = T(2,4);
-Z = T(3,4);
+X = T(1,4)
+Y = T(2,4)
+Z = T(3,4)
+
+plot3(X,Y,Z,'r*')
+xlabel('Posiçãox')
+ylabel('Posiçãoy')
+zlabel('Posiçãoz')
+title 'Coordenadas de posição';
+grid on;
+
